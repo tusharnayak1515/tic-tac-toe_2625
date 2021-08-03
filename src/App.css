@@ -1,38 +1,197 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 2vw;
+  background-color: rgb(55, 25, 161);
+}
+
+.main-header {
+  margin-top: 1vh;
+  font-size: 3vw;
   text-align: center;
+  color: rgb(218, 255, 82);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.span-head {
+  color: rgb(255, 93, 169);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.winner {
+    margin-top: 0.5vh;
+    font-size: 4vw;
+    text-align: center;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.winner_X {
+    color: rgb(255, 45, 45);
+}
+
+.winner_0 {
+    color: rgb(42, 253, 52);
+}
+
+.gameplay_head {
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.gameplay1 {
+    margin-top: 1vh;
+    text-align: center;
+    color: rgb(255, 45, 45);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.gameplay2 {
+    margin-top: 1vh;
+    text-align: center;
+    color: rgb(42, 253, 52);
+}
+
+.tied {
+  text-align: center;
+  color: rgb(255, 15, 235);
+}
+
+.new_game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+}
+
+.btn_game {
+  color: white;
+  font-size: 1.5vw;
+  outline: none;
+  border: 0.3vh solid rgb(155, 5, 5);
+  border-radius: 0.5vw;
+  background-color: rgb(156, 3, 3);
+  padding: 0.3vh 0.5vh;
+  box-shadow: 0.2vh 0.2vh 1vh 0.2vh rgb(180, 234, 241);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Media Queries  */
+
+@media only screen and (max-width: 480px) {
+  .main-header {
+    font-size: 6vw;
   }
-  to {
-    transform: rotate(360deg);
+
+  .winner {
+    font-size: 5vw;
+  }
+
+  .gameplay_head {
+    font-size: 5vw;
+  }
+
+  .btn_game {
+    font-size: 3vw;
+    font-weight: bold;
+  }
+
+  .tied {
+    font-size: 5vw;
+  }
+
+  .new_game {
+    margin-top: 5vh;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .main-header {
+    font-size: 6vw;
+  }
+
+  .winner {
+    font-size: 5vw;
+  }
+
+  .gameplay_head {
+    font-size: 5vw;
+  }
+
+  .btn_game {
+    font-size: 2.7vw;
+  }
+
+  .tied {
+    font-size: 5vw;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .main-header {
+    font-size: 4vw;
+  }
+
+  .winner {
+    font-size: 3vw;
+  }
+
+  .gameplay_head {
+    font-size: 3vw;
+  }
+
+  .btn_game {
+    font-size: 2vw;
+  }
+
+  .tied {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .main-header {
+    font-size: 4vw;
+  }
+
+  .winner {
+    font-size: 3vw;
+  }
+
+  .gameplay_head {
+    font-size: 3vw;
+  }
+
+  .btn_game {
+    font-size: 2vw;
+  }
+
+  .tied {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .main-header {
+    font-size: 3vw;
+  }
+
+  .winner {
+    font-size: 2vw;
+  }
+
+  .gameplay_head {
+    font-size: 2vw;
+  }
+
+  .btn_game {
+    font-size: 1.5vw;
+  }
+
+  .tied {
+    font-size: 2vw;
   }
 }

@@ -1,0 +1,47 @@
+#board {
+    width: 18vw;
+    height: 33vh;
+    margin: auto;
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    margin-top: 2vh;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: 0.3vw 0.3vw 3vh 0.3vh rgb(41, 47, 51);
+    /* background-color: yellowgreen; */
+}
+
+/* Media Queries  */
+
+@media only screen and (max-width: 480px) {
+    #board {
+        width: 30vw;
+        height: 20vh;
+        background-color: hotpink;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #board {
+        width: 33vw;
+        height: 27vh;
+        background-color: hotpink;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #board {
+        width: 30vw;
+        height: 30vh;
+        background-color: hotpink;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    #board {
+        width: 24vw;
+        height: 33vh;
+        background-color: hotpink;
+    }
+}
